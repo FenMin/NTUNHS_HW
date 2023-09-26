@@ -4,19 +4,19 @@
 
 void issue1(){
 	int hour,keep;
-	printf("½Ğ¿é¤J°±¨®ªº®É¼Æ¡G");
+	printf("è«‹è¼¸å…¥åœè»Šçš„æ™‚æ•¸ï¼š");
 	
 	while(scanf("%d",&hour) != EOF){
 		
-		if (hour <= 1) printf("¤£¦¬¶O");
-		else if (hour >= 2) printf("¦¬¶Oª÷ÃB¬°(hour*40)¡G%d",hour*40);
-		else printf("½Ğ¿é¤J¼Æ¦r");
+		if (hour <= 1) printf("ä¸æ”¶è²»");
+		else if (hour >= 2) printf("æ”¶è²»é‡‘é¡ç‚º(hour*40)ï¼š%d",hour*40);
+		else printf("è«‹è¼¸å…¥æ•¸å­—");
 		
-		printf("\n\n===========\n(Ä~Äò½Ğ¿é¤J1)¡G");
+		printf("\n\n===========\n(ç¹¼çºŒè«‹è¼¸å…¥1)ï¼š");
 		scanf("%d",&keep);
 		if (keep == 1) {
 			system("cls");
-			printf("½Ğ¿é¤J°±¨®ªº®É¼Æ¡G");
+			printf("è«‹è¼¸å…¥åœè»Šçš„æ™‚æ•¸ï¼š");
 		}
 		else return;
 	}
@@ -26,14 +26,14 @@ void issue2(){
 	int price,tickets,keep;
 	while (1){
 	
-		printf("¨C±i¤J³õ¨é»ù®æ(¤¸)¡G");
+		printf("æ¯å¼µå…¥å ´åˆ¸åƒ¹æ ¼(å…ƒ)ï¼š");
 		scanf("%d",&price);
-		printf("½Ğ¿é¤JÅU«È±ıÁÊ¶Rªº±i¼Æ¡G");
+		printf("è«‹è¼¸å…¥é¡§å®¢æ¬²è³¼è²·çš„å¼µæ•¸ï¼š");
 		scanf("%d",&tickets);
 		printf("======================\n");
-		printf("Á`»ù¬°¡G%.2f\n",tickets>=10?price*tickets*0.9:price*tickets);
+		printf("ç¸½åƒ¹ç‚ºï¼š%.2f\n",tickets>=10?price*tickets*0.9:price*tickets);
 		
-		printf("(Ä~Äò½Ğ¿é¤J1)¡G");
+		printf("(ç¹¼çºŒè«‹è¼¸å…¥1)ï¼š");
 		scanf("%d",&keep);
 		if (keep == 1) system("cls");
 		else return;
@@ -43,21 +43,21 @@ void issue2(){
 void issue3(){
 	
 	int num,pow,keep;
-	printf("½Ğ¿é¤J©Ò­n­pºâªº¼Æ­È¡G");
+	printf("è«‹è¼¸å…¥æ‰€è¦è¨ˆç®—çš„æ•¸å€¼ï¼š");
 	
 	while (scanf("%d",&num) != EOF){
- 		printf("½Ğ¿é¤J1(­pºâ¥­¤è­È)©Î2(­pºâ¥ß¤è­È)¡G");
+ 		printf("è«‹è¼¸å…¥1(è¨ˆç®—å¹³æ–¹å€¼)æˆ–2(è¨ˆç®—ç«‹æ–¹å€¼)ï¼š");
 		scanf("%d",&keep);
 		printf("======================\n");
 		
-		printf("%s",keep==1?"¥­¤è­È¬°¡G":"¥ß¤è­È¬°¡G");
+		printf("%s",keep==1?"å¹³æ–¹å€¼ç‚ºï¼š":"ç«‹æ–¹å€¼ç‚ºï¼š");
 		printf("%d",keep==1?num*num:num*num*num);
 		
-		printf("\n(Ä~Äò½Ğ¿é¤J1)¡G");
+		printf("\n(ç¹¼çºŒè«‹è¼¸å…¥1)ï¼š");
 		scanf("%d",&keep);
 		if (keep == 1) {
 			system("cls");
-			printf("½Ğ¿é¤J©Ò­n­pºâªº¼Æ­È¡G");
+			printf("è«‹è¼¸å…¥æ‰€è¦è¨ˆç®—çš„æ•¸å€¼ï¼š");
 		}
 		else return;
 	} 
@@ -66,18 +66,18 @@ void issue3(){
 
 void issue4(){
 	int num , keep;
-	printf("½Ğ¿é¤J¤@­Ó¥¿¾ã¼Æ¡G"); 
+	printf("è«‹è¼¸å…¥ä¸€å€‹æ­£æ•´æ•¸ï¼š"); 
 	
 	
 	while(scanf("%d",&num) != EOF){
 		
 		printf("=============\n");
-		printf("%s",(num%2==0 || num%3==0)?"¦¹¼Æ¬°2©Î3ªº­¿¼Æ":"¦¹¼Æ«D¬°2©Î3ªº­¿¼Æ");
-		printf("\n\n(Ä~Äò½Ğ¿é¤J1)¡G");
+		printf("%s",(num%2==0 || num%3==0)?"æ­¤æ•¸ç‚º2æˆ–3çš„å€æ•¸":"æ­¤æ•¸éç‚º2æˆ–3çš„å€æ•¸");
+		printf("\n\n(ç¹¼çºŒè«‹è¼¸å…¥1)ï¼š");
 		scanf("%d",&keep);
 		if (keep == 1) {
 			system("cls");
-			printf("½Ğ¿é¤J¤@­Ó¥¿¾ã¼Æ¡G");
+			printf("è«‹è¼¸å…¥ä¸€å€‹æ­£æ•´æ•¸ï¼š");
 		}
 		else return;
 	}
@@ -89,7 +89,7 @@ void issue5(){
 	int money,keep; 
 	float discount;
 	
-	printf("«È¤áÁÊª«ª÷ÃB(¤¸)¡G");
+	printf("å®¢æˆ¶è³¼ç‰©é‡‘é¡(å…ƒ)ï¼š");
 	
 	while(scanf("%d",&money)){
 		if (money >= 1000 && money < 5000)	discount = 0; 
@@ -98,11 +98,12 @@ void issue5(){
 		else if (money > 100000) discount = 20;
 		
 		printf("=============\n");
-		printf("§é¦©¬°%.0f%%\n",discount);
-		printf("¹ê¥I¬°%.0f¤¸",money*(1-discount*0.01));	
+		printf("æŠ˜æ‰£ç‚º%.0f%%\n",discount);
+		printf("å¯¦ä»˜ç‚º%.0få…ƒ",money*(1-discount*0.01));	
+		printf("\n\n(ç¹¼çºŒè«‹è¼¸å…¥1)ï¼š");
 		if (keep == 1) {
 			system("cls");
-			printf("«È¤áÁÊª«ª÷ÃB(¤¸)¡G");
+			printf("å®¢æˆ¶è³¼ç‰©é‡‘é¡(å…ƒ)ï¼š");
 		}
 		else return;
 	}
@@ -112,7 +113,7 @@ int main(){
 
   	int issue;
 	
-	printf("½Ğ¿é¤J­n«e©¹ªºÃD¥Ø¡G");
+	printf("è«‹è¼¸å…¥è¦å‰å¾€çš„é¡Œç›®ï¼š");
 	while (scanf("%d",&issue)){
    		switch (issue){
    			case 1:
@@ -137,7 +138,7 @@ int main(){
    				break;
    			
    			default:
-   				printf("¬dµL¦¹ÃD");
+   				printf("æŸ¥ç„¡æ­¤é¡Œ");
 		   }
    }
 } 
