@@ -18,7 +18,11 @@ void issue1(){
 			system("cls");
 			printf("請輸入停車的時數：");
 		}
-		else return;
+		else{
+			system("cls");
+			printf("請輸入要前往的題目：");
+			return;
+		}
 	}
 }
 
@@ -36,7 +40,11 @@ void issue2(){
 		printf("(繼續請輸入1)：");
 		scanf("%d",&keep);
 		if (keep == 1) system("cls");
-		else return;
+		else{
+			system("cls");
+			printf("請輸入要前往的題目：");
+			return;
+		}
 	}
 }
 	
@@ -59,7 +67,11 @@ void issue3(){
 			system("cls");
 			printf("請輸入所要計算的數值：");
 		}
-		else return;
+		else{
+			system("cls");
+			printf("請輸入要前往的題目：");
+			return;
+		}
 	} 
 }
 
@@ -79,7 +91,11 @@ void issue4(){
 			system("cls");
 			printf("請輸入一個正整數：");
 		}
-		else return;
+		else{
+			system("cls");
+			printf("請輸入要前往的題目：");
+			return;
+		}
 	}
 }
 
@@ -87,25 +103,31 @@ void issue4(){
 
 void issue5(){
 	int money,keep; 
-	float discount;
+	
 	
 	printf("客戶購物金額(元)：");
 	
 	while(scanf("%d",&money)){
-		if (money >= 1000 && money < 5000)	discount = 0; 
+		float discount = 0;
+		if (money >= 1000 && money < 5000)	discount = 5; 
 		else if (money >= 5000 && money < 30000) discount = 10;
 		else if (money >= 30000 && money < 100000) discount = 15;
 		else if (money > 100000) discount = 20;
 		
 		printf("=============\n");
 		printf("折扣為%.0f%%\n",discount);
-		printf("實付為%.0f元",money*(1-discount*0.01));	
+		printf("實付為%.0f元",money*(1-discount*0.01));
 		printf("\n\n(繼續請輸入1)：");
+		scanf("%d",&keep);	
 		if (keep == 1) {
 			system("cls");
 			printf("客戶購物金額(元)：");
 		}
-		else return;
+		else{
+			system("cls");
+			printf("請輸入要前往的題目：");
+			return;
+		}
 	}
 }
 
@@ -139,6 +161,7 @@ int main(){
    			
    			default:
    				printf("查無此題");
+   				break;
 		   }
    }
 } 
